@@ -21,7 +21,7 @@ env:
 
 jobs:
   Build:
-    runs-on: VM-0-5-ubuntu
+    runs-on: self-hosted
 
     outputs:
       COMMIT_AUTHOR: ${{ steps.clone.outputs.COMMIT_AUTHOR }}
