@@ -15,7 +15,7 @@ env:
 
 jobs:
   Package:
-    runs-on: ubuntu-22.04
+    runs-on: VM-0-5-ubuntu
     if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id
     name: Package for ${{ matrix.version }}
     strategy:
